@@ -4,6 +4,8 @@ git init
 # lägg till en github remote repositroy för lagring i molnet , detta görs bara en gång per projekt
 git remote add origin https://github.com/saifyousifsson/demo.git
 
+
+
 # ligger till nya filer/ändrade filer till min local git respository göras varje gång du gjort ändringar
 git add .
 
@@ -11,8 +13,18 @@ git add .
 git commit -m "lektion 1"
 
 # skickas upp alla filer till remote git repositroy , göras varje gång du görjt ändringer
-
 git push origin main
+
+
+
+
+
+
+#för att hämta hem de senaste från din remote git repositroy , köras värje gång du vill hämta hem nya saker 
+git pull origin main
+
+# för att hämta min remote git repositroy från min github , göras bara en gång 
+git clon https://github.com/saifyousifsson/demo.git
 
 
 
