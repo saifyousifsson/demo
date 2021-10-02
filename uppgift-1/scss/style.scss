@@ -1,0 +1,13 @@
+@import './variables';
+@import './functions';
+@import './mixins';
+@import './utilites';
+
+
+// sections scss
+@import 'sections/navbar';
+@import 'sections/show-case';
+@import 'sections/Effectivetools';
+@import 'sections/Processflow';
+@import 'sections/wearethebest';
+@import 'sections/latest-news';

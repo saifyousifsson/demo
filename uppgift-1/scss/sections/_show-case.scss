@@ -1,0 +1,79 @@
+#show-case{
+    margin-top: 1px;
+  
+     .img{
+      
+      position: absolute;
+         }
+     .container{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+     }
+        .case-text{
+            position: absolute;
+            top: 70px;
+              left:205px;  
+              margin-left: 100px;  
+              
+              .h1{
+                box-sizing: border-box;
+                  width: 500px;
+                  height: 247;
+                  color: $color-dark;
+                  font-size: 53px;
+                  font-weight: bold;
+                  justify-content: center;
+                  padding-top: 190px;
+                 margin-left:-150px;
+                 font-family: $bread-font;
+                }
+                  .text-b{
+                   width: 450px;
+                   height: 55;
+                   font-size: 16px;
+                   margin-left: -150px;
+                   padding-top: 30px;
+                   color: $color-main;
+                   opacity: 80%;
+                  }
+                     .btn-fade {
+                         
+                         border: 1px  ;
+                         padding: 19px 35px;
+                         border-radius: 5px;  
+                         background: rgb(242,55,121);
+                         background: linear-gradient(90deg, rgba(242,55,121,1) 0%, rgba(255,104,3,1) 50%, rgba(255,166,46,1) 100%);
+                         margin-top: 30px ;
+                         margin-left:-150px;
+                                  }
+                             .img-1{
+                                top: -160px;
+                                left:220px;
+                                width: 70px;
+                                height: 10px;
+                                position:absolute;
+                                margin-left: 90px;
+                                padding-left: 4px;
+                              
+                                 .img-2{
+                                   position: relative;
+                                   top:-755px;
+                                   right:110px;
+                               } 
+                          } 
+                      } 
+                   }
+              
+         
+                  
+    
+      
+            
+        
+        
+       
+   
+

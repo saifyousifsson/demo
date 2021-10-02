@@ -1,0 +1,124 @@
+.the-best .title-the-best{
+    width: 630px;
+    height: 143px;
+    color: $color-dark;
+    font-size: 45px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+   
+      
+}
+.text-the-best{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 500px;
+    height: 67px;
+    color: $color-main;
+    opacity: 90%;
+    font-family: 'Poppins', sans-serif;
+     
+    
+  }
+  .map-pic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .dv1 { 
+        grid-area: 1 / 1 / 3 / 5; 
+        align-items: center;
+        text-align: center;
+        margin-top: -10px;
+        }
+    .dv2 {
+         grid-area: 2 / 1 / 3 / 2; 
+         margin-top: -125px;
+         margin-left: 175px;
+         }
+    .dv3 { 
+        grid-area: 2 / 2 / 3 / 3; 
+        margin-top: -125px;
+       padding-left: 130px;
+    }
+    .dv4 {
+         grid-area: 2 / 3 / 3 / 4; 
+         margin-top: -125px;
+         padding-left: 100px;
+        }
+    .dv5 {
+         grid-area: 2 / 4 / 3 / 5; 
+         margin-top: -125px;
+         padding-left: 40px;
+        }
+
+
+
+
+ .mitt-border{
+        
+         border: 1px  transparent ;
+         height: 125px;
+         margin-top: -175px;
+         background-color: white;
+         display: block;
+         width: 630px;
+         text-align: center;
+         align-items: center;
+         margin-bottom: 10px;
+         margin-left: 340px;
+         position:absolute;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         border-radius: 10px;
+         display: flex;
+         justify-content: space-between;
+          }   
+ .have-any{
+     width: 310x;
+     height: 29px;
+     font-size: 21px;
+     font-family: 'Poppins', sans-serif;
+     color: $color-dark;
+     padding-left: 40px;
+ }
+ .do-not{
+   color: $color-main;
+   font-size: 16px;
+   opacity:80% ;
+  padding-right: 60px;
+  padding-top: 8px;
+   
+ }
+ .contact-us{
+    background: rgb(242,55,121);
+    background: linear-gradient(90deg, rgba(242,55,121,1) 0%, rgba(255,104,3,1) 50%, rgba(255,166,46,1) 100%);
+    border:1px  transparent;
+    width: 130px;
+    height: 45px;
+    margin-right: 35px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-family: $bread-font;
+ } 
+ @media only screen and (max-width:1500px)
+    { .title-the-best{  margin-bottom: 0px; text-overflow: ellipsis; padding-left: 600px; white-space: nowrap;}
+   .text-the-best{margin-left: 400px;  padding-right: 0px;}
+
+ }  
+ @media only screen and (max-width:1500px)
+ { .dv2{ padding-left: 70px;}
+  .dv5 {padding-left: 80px; margin-right: 100px;}
+
+ }
+ 
