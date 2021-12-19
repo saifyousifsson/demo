@@ -1,0 +1,95 @@
+﻿<Page
+    x:Class="customerList.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:customerList"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0" >
+            <Rectangle Fill="#5e7691" />
+            <Grid Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Margin="15">
+                    <TextBlock Text="Förnamn" Margin="0 0 0 5"/>
+                    <TextBox x:Name="tbFirstName" />
+                </StackPanel>
+                <StackPanel Grid.Row="1" Margin="15">
+                    <TextBlock Text="Efternamn" Margin="0 0 0 5"/>
+                    <TextBox x:Name="tbLastName" />
+                </StackPanel>
+                <StackPanel Grid.Row="2" Margin="15">
+                    <TextBlock Text="E-postadress" Margin="0 0 0 5"/>
+                    <TextBox x:Name="tbEmail" />
+                </StackPanel>
+               
+                <Button x:Name="btnAdd" Content="Lägg till" Grid.Row="5" HorizontalAlignment="Stretch"  Click="btnAdd_Click" />
+            </Grid>
+           </Grid>
+        <Grid Grid.Column="1" Padding="20" >
+            <StackPanel>
+                <TextBlock FontSize="29" FontWeight="SemiBold" Text="Kontakter" Margin="0 0 0 13"/>
+                <ListView  x:Name="lvContacts"  DataContext="customerList.Models.ContactPerson" HorizontalContentAlignment="Stretch">
+                    <ListView.ItemTemplate>
+                        <DataTemplate >
+                            <Grid Margin="0 0 0 10" >
+                                <Grid.ColumnDefinitions >
+                                    <ColumnDefinition Width="0.5*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="auto"/>
+                                    </Grid.RowDefinitions>
+
+                                </Grid>
+                                <Rectangle Grid.Row="0" Grid.Column="0" Width="55" Height="55" Fill="#5e7691" />
+                                <StackPanel Grid.Row="1" Grid.Column="1" Margin="12 0 0 0" VerticalAlignment="Center" >
+                                    <TextBlock  FontSize="16" Text="{Binding FullName}"/>
+                                    <TextBlock  FontSize="12" Foreground="#696a6b"  Text= "{Binding Email}"/>
+
+
+                                    <TextBlock FontSize="12" Foreground="#696a6b">
+                                        <Run Text="Rabattkod :"/>
+                                        <Run Text= "{Binding Rabattkod}"/>
+                                    </TextBlock>
+                                   
+                                   
+                                     
+                                </StackPanel>
+                            </Grid>
+                            
+                            
+                        </DataTemplate>      
+                        
+                </ListView.ItemTemplate>
+                   
+                </ListView>
+
+            </StackPanel>
+
+            <Button x:Name="btnDelete" Background="#5e7691"  Content="Redera" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.506" Click="btnDelete_Click"  />
+        </Grid>
+
+    </Grid>
+
+   
+</Page>
